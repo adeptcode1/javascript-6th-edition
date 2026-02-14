@@ -6,10 +6,12 @@
       Chapter 3
       Hands-on Project 3-3
 
-      Author: 
-      Date:   
+      Author:  Christopher W. Schaeffer
+      Date:    2026-02-14
 
       Filename: index.htm
+
+      Script that populates an array of places, and outputs values to page.
    -->
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -37,5 +39,24 @@
           </ul>
       </div>
    </article>
+   <script>
+      // global variable places
+      var places = ["Reading", "Pottsville", "Harrisburg", "Philadelphia", "Minersville"]
+
+      // processPlaces function loops through array and sets list item html to current place value
+      function processPlaces() {
+         for (i = 0; i < places.length; i++) {
+            var listItem = "item" + (i + 1);
+            document.getElementById(listItem).innerHTML = places[i];
+         }
+      }
+
+      // add event listener, or attach event in older browsers
+      if (window.addEventListener) {
+         window.addEventListener("load", processPlaces, false);
+      } else if (window.attachEvent) {
+         window.attachEvent("onload", processPlaces);
+      }
+   </script>
 </body>
 </html>

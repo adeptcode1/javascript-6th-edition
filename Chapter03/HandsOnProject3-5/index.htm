@@ -4,7 +4,7 @@
    <!--
       JavaScript 6th Edition
       Chapter 3
-      Hands-on Project 3-4
+      Hands-on Project 3-5
 
       Author:  Christopher W. Schaeffer
       Date:    2026-02-14
@@ -12,10 +12,11 @@
       Filename: index.htm
 
       Script allows input of five items, displays items in list. Display thank you message when 5 items entered.
+      Modified Hands-on Project 3-4 to utilize switch instead of if statements.
    -->
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>Hands-on Project 3-4</title>
+   <title>Hands-on Project 3-5</title>
    <link rel="stylesheet" href="styles.css" />
    <script src="modernizr.custom.05819.js"></script>
 </head>
@@ -23,7 +24,7 @@
 <body>
    <header>
       <h1>
-         Hands-on Project 3-4
+         Hands-on Project 3-5
       </h1>
    </header>
 
@@ -57,7 +58,7 @@
 
       function processInput() {
          // process item, if less than 5 by outputting to list. Clear input. if 5th item, thank user.
-         if (i <= 5) {
+         /*if (i <= 5) {
             listItem = "item" + i;
             document.getElementById(listItem).innerHTML = document.getElementById("toolBox").value;
             document.getElementById("toolBox").value = "";
@@ -66,7 +67,24 @@
             }
             // be sure to increment counter
             i++;
+         }*/
+         switch (i) {
+            case 5:
+               listItem = "item" + i;
+               document.getElementById(listItem).innerHTML = document.getElementById("toolBox").value;
+               document.getElementById("toolBox").value = "";
+               document.getElementById("resultsExpl").innerHTML = "Thanks for your suggestions";
+               //disable button after 5th item
+               document.getElementById("button").disabled = true;
+               break;
+            default:
+               listItem = "item" + i;
+               document.getElementById(listItem).innerHTML = document.getElementById("toolBox").value;
+               document.getElementById("toolBox").value = "";
+               break;
+
          }
+         i++;
       }
 
       // add event listener, or attach event in older browsers
