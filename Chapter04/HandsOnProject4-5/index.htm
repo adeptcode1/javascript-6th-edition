@@ -6,10 +6,16 @@
       Chapter 4
       Hands-on Project 4-5
 
-      Author: 
-      Date:   
+      Author:  Christopher W. Schaeffer
+      Date:    2026-02-14
 
       Filename: index.htm
+
+      Debugging assignment
+
+      Found/replaced:
+      --Line 53: Missing opening quote.
+      --Line 56: Incorrect conversion multiplier.  Corrected with proper value of ~1.6
    -->
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,9 +51,9 @@
    </article>
    <script>
       var kilometersElement = document.getElementById("kValue");
-      var milesElement = document.getElementById(mValue");
+      var milesElement = document.getElementById("mValue");
       function convert() {
-         var km = milesElement.value * 0.6
+         var km = milesElement.value * 1.6;
          kilometersElement.innerHTML = km;
       }
       
