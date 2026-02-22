@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <!--	
+		Berks County Web Developers
+    	Author: Christopher W. Schaeffer
+    	Date:   January 20, 2019
+		MODIFIED: FEBRUARY 8, 2019
+		ADDED MODIFIED TEMPLATE CSS FILE FOR GALLERY, ADDED BOOTSTRAP AND LIGHT BOX.
+    	
+		Filename: gallery.html
+		
+		Simple gallery showcasing accomplished projects.
+	-->
+  <head>
+    <meta charset="utf-8" />
+    <title>Berks County Web Developers - Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"
+    />
+    <link rel="stylesheet" href="css/gallery-grid.css" />
+    <link href="css/bw_styles.css" rel="stylesheet" />
+  </head>
+
+  <!--The body element contains the elements that make up the body of the page.-->
+  <body>
+    <!--Our header contains logo and name.-->
+    <header>
+      <a href="index.html">
+        <img
+          src="images/logo60ptran50x49.png"
+          alt="Berks County Web Developers"
+        />
+      </a>
+    </header>
+
+    <!-- Our Navigation Links-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" id="active">Gallery</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- This starts the main content of the page, stored in sections and articles -->
+    <main>
+      <!-- Project website links with logos-->
+      <!-- Deviates from normal template due to bootstrap containers. -->
+      <div class="container gallery-container">
+        <h1>Berks County Web Developers Gallery</h1>
+        <!-- Articles contained in sections -->
+        <article id="accomplishments">
+          <h2>Our Accomplishments</h2>
+          <p>
+            This is our online portfolio. We are acquiring projects and we will
+            link them here. Enjoy some examples of work we have performed, and
+            feel free to imagine how we can put our skills to work for you.
+          </p>
+        </article>
+        <!-- gallery layout formatting modified from free template provided by tutorialzine. -->
+        <div class="tz-gallery">
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="lightbox"
+                href="http://www.tirestoyourspot.com/Images/clearlogo2.gif"
+              >
+                <img
+                  src="http://www.tirestoyourspot.com/Images/clearlogo2.gif"
+                  alt="Tires To Your Spot"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="lightbox"
+                href="http://www.berks.website/images/berksweb-logo.png"
+              >
+                <img
+                  src="./images/berksweb-logo.png"
+                  alt="Berks County Web Developers"
+                />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <a
+                class="lightbox"
+                href="images/ai-artificial-intelligence-codes-247791.jpg"
+              >
+                <img
+                  src="images/ai-artificial-intelligence-codes-247791.jpg"
+                  alt="Screens of Code"
+                />
+              </a>
+            </div>
+          </div>
+          <video width="400" controls>
+            <source src="media/Hacking.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+          <p>
+            Video courtesy of
+            <a href="https://www.pexels.com/" target="_blank">pexels.com</a>.
+          </p>
+          <audio controls>
+            <source src="media/bensound-goinghigher.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <p>
+            Royalty free music from
+            <a
+              href="http://www.bensound.com/royalty-free-music/track/going-higher"
+              >www.bensound.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- Starts script for light box functionality. -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script>
+        baguetteBox.run(".tz-gallery");
+      </script>
+    </main>
+    <!-- Common Page Footer. -->
+    <footer>&copy;2019 Christopher W. Schaeffer</footer>
+  </body>
+</html>

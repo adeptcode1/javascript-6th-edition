@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-us">
+<!--	
+		Berks County Web Developers
+    	Author: Christopher W. Schaeffer
+    	Date:	January 20, 2019
+
+    	Filename: contact-us.html
+		Contact information page.  Phone number and Email addresses will contain active
+		hrefs.
+	-->
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Us - Berks County Web Developers</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    	<link rel="stylesheet" href="css/gallery-grid.css">
+		<link href="css/bw_styles.css" rel="stylesheet" />
+	</head>
+	
+	<!--The body element contains the elements that make up the body of the page.-->
+	<body>
+		<!--Our header contains logo and name.-->
+		<header>
+			<a href="index.html">
+				<img src="images/berksweb-logo.png" alt="Berks County Web Developers" />
+			</a>	
+		</header>
+		
+		<!-- Our Navigation Links-->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact-us.html" id="active">Contact Us</a></li>
+			</ul>
+		</nav>
+		<!-- This starts the main content of the page, stored in sections and articles -->
+		<main>
+			<section id="contact-us" class="flex_container">
+				<h1 class="full_width">Contact Us</h1>
+				<!-- Articles contained in sections -->
+				<article id="projects" class="full_width">
+					<h2>Prospective Projects</h2>
+					<p>Do you have a business that is in need of developing a 
+						web presence?  Is your current site in need of an 
+						upgrade?  We are always looking to tackle new projects.  
+						We look forward to hearing from you to develop a plan 
+						to enhance your online image.</p>
+
+					<p>We are currently a part-time operation. Development 
+						efforts are performed while not at our current full-time 
+						occupation.  Contact us by filling out the following form, 
+						or choose one of the methods below.</p>
+				</article>
+				<form class="full_width" action="response_page.php" method="post">
+					<fieldset>
+						<legend>Contact Information</legend>
+						<label for="user_name">Name: </label><input type="text" id="user_name" name="name" size="30">
+						<label for="email"> E-mail: </label><input type="email" id="email" name="email" size="50"><br>
+					</fieldset>
+					<fieldset>
+						<legend>User Inquiry</legend>
+						<textarea name="inquiry" rows="10" cols="30">Enter your question here.</textarea>
+						<label for="topic">Topic of Interest</label>
+						<select id="topic" name="topic">
+							<option value="HTML">HTML</option>
+							<option value="PHP">PHP</option>
+							<option value="js">JavaScript</option>
+							<option value="sql">SQL Databases</option>
+						</select>
+						Add to Mailing List
+						<label for="yes">Yes</label>
+						<input type="radio" id="yes" name="subscribe" value="yes">
+						<label for="no">No</label>
+						<input type="radio" id="no" name="subscribe" value="no">
+					</fieldset>
+					<input type="submit" value="Submit">
+					
+					
+				</form>
+				<article id="write-us" class="full_width">
+					<h2>Written Correspondence</h2>
+					<p>Mail:</p>
+						<address>
+							Berks County Web Developers<br/>
+							c/o Christopher W. Schaeffer<br/>
+							835 Franklin St.<br/>
+							Apt. 804<br/>
+							Reading, PA 19602<br/>
+						</address>
+					
+				
+					<p>Email: 
+						<a href="mailto:codewriters@berks.website">
+							codewriters@berks.website
+						</a>
+					</p>
+				</article>
+				<article id="phone" class="full_width">
+					<p>Phone: <a href="tel:+14847216440">(484)-721-6440</a></p>
+				</article>
+			</section>
+		</main>
+		<!-- Common Page Footer. -->
+		<footer>
+			&copy;2019 Christopher W. Schaeffer
+		</footer>
+	</body>
+</html>

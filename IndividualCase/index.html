@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en-us">
+	<!--
+    	Berks County Web Developers
+    	Author:		Christopher W. Schaeffer
+    	Date:		January 13, 2019
+
+		MODIFIED: 	January 27, 2109
+		ADAPTED TO UTILIZE bw_styles.css style sheet.
+		ADAPTED TO NEW DIRECTORY STRUCTURE.
+
+		
+		MODIFIED:	February 8, 2019
+		ADDED SECTIONS WITHIN HOME SECTION FOR FORMATTING INTO GROUPED COLUMNS
+		UTILIZING GLOBAL CLASSES TO DEFINE COLUMN TYPES/SIZES
+
+    	Filename: index.html
+		General introduction page for this website.
+		The head section can contain the following elements: title, style, base, link, meta, script, noscript.
+		The current iteration of this page renders using browser defaults.  Style sheets will refine layout structure
+		in second phase of project.
+   	-->
+	<head>
+		<meta charset="utf-8">
+		<title>Berks County Website Developers - Home</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    	<link rel="stylesheet" href="css/gallery-grid.css">
+		<link href="css/bw_styles.css" rel="stylesheet" />
+	</head>
+	
+	<!--
+		The body element contains the elements that make up the body of the page.
+	-->
+	<body>
+		<!--
+			Our header contains logo and name, as well as navigation element and links.
+		-->
+		<header>
+			<a href="index.html">
+				<img src="images/berksweb-logo.png" alt="Berks County Web Developers" />
+			</a>
+		</header>	
+			<nav>
+				<ul>
+					<li><a href="index.html" id="active">Home</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		<!-- This starts the main content of the page, stored in sections and articles -->
+		<main>
+			<section id="home" class="flex_container">
+				<!-- Section Heading -->
+				<h1 class="full_width">Welcome to Berks County Web Developers</h1>
+				<!-- Articles contained in sections -->
+				<section id="front_page_intro" class="full_width">
+					<article id="welcome">
+						<p>We would like to introduce you to a new provider of
+						interactive web solutions in Berks County, Pennsylvania.
+						We are currently seeking projects to build system solutions
+						that engage customers in unique ways.  This is one of our
+						pilot projects which is being used for training purposes.</p>
+					</article>
+				</section><section id="org_profile" class="left_column">
+					<article id="solutions">
+						<!-- Article Heading -->
+						<h2>Building Solutions Locally</h2>
+						<!-- Article Content -->
+						<p>Berks County Web Developers specializes in creating your 
+							image in the online market.  We innovate with you to create 
+							brand specific designs with advanced features.  Let us
+							show you how we can build a presence for your small 
+							business.</p>
+						<p>We work with a step-by-step methodology to develop your 
+							platform.  We build your presence.  We develop your 
+							customer interface.  We link your internal systems.</p>
+					</article>
+					<!-- Another article -->
+					<article id="technologies">
+						<h2>Full Stack Solutions</h2>
+						<p>We develop your system using the latest sound technologies.  
+							Requirements may vary, but we normally utilize HTML and CSS
+							for page design.  Dynamic HTML pages may be generated with PHP scripts.  
+							Data storage requirements are met with SQL databases.  Client-side
+							processing or content manipulation is performed with Java Script.
+						</p>
+					</article>
+				</section><section id="user_engagement" class="right_column">
+					<!-- Another article -->
+					<article id="interaction">
+						<h2>Visitor Interaction to Sales Reaction</h2>
+						<p>We develop systems for visitor self-service.  We guide 
+							your visitor through the process, from first interaction 
+							to sales closure.  We create solutions that create future 
+							interaction, causing sales reactions.</p>
+						<p>Turning a visitor into a customer can be a challenge.  We 
+							accept that challenge.  Our solutions also attempt to go further - creating return sales potentials.</p>
+						</article>
+					<!-- Another article -->
+					<article id="social">
+						<h2>Social Media Integration</h2>
+						<p>Social media is a major focus on developing brands online.  
+							These platforms provide another channel to funnel traffic 
+							to your main online platform.  We also provide integration with
+							these systems.</p>
+						<p>Our developers constantly keep up-to-date with the latest developer 		information for platforms such as Facebook and Twitter.  We can even 	 integrate the messaging features of these systems into your website. 	  Seamless integration with all media platforms	 you participate in is 	   a goal of ours when we develop your systems.</p>
+					</article>
+				</section>
+			</section>
+		</main>
+		<!-- Common Page Footer. -->
+		<footer>
+			&copy;2019 Christopher W. Schaeffer
+		</footer>
+	</body>
+</html>

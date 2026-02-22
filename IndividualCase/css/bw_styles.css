@@ -1,0 +1,271 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Press+Start+2P|Roboto+Slab:300|Titillium+Web:900');
+
+/*
+	Berks County Web Developers
+   	Author: 	Christopher W. Schaeffer
+   	Date:		January 20, 2019
+	MODIFIED:	January 27, 2019
+	TEXT SIZES ADJUSTED DUE TO EFFECTS OCCURRING AFTER ADDING BOOTSTRAP FRAMEWORK TO SITE.
+    Filename: bw_styles.css
+	This is the stylesheet for the website.  It is split into two sections:
+	structural layout and graphical styling.  @charset and @imports for google
+	fonts are performed above.
+*/
+
+/* STRUCTURAL LAYOUTS */
+
+/* Minimum acceptable width for this layout is 800px */
+html {
+	margin: 0px;
+}
+body {
+	margin: 1%;
+}
+
+/* header full width */
+body > header {
+	width: 100%;
+	
+}
+
+/* sets a standard width to the header image */
+body > header img{
+	width: 50%;
+}
+
+/* navigation bar width, font and size and background default*/
+nav {
+	width: 100%;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 1.5em;
+	background-color: rgba(2,1,104,1.00);
+}
+
+/* navigation unordered list properties */
+nav > ul {
+	display: flex;
+	float:none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+/* navigation list items float left */
+nav > ul > li {
+	text-align: center;
+}
+
+/* navigation list item anchor layout */
+nav > ul > li > a {
+	padding: 2px 10px;
+}
+
+/* body > main > section structural layout */
+body > main > section {
+	width: 90%;
+	border: 2px solid;
+	margin: 2% auto;
+	padding: 10px;
+}
+
+/*class containers for page layout 
+	(single column row, right column, left column responsive)
+*/
+.flex_container{
+	display: flex;
+	flex-wrap:wrap;
+}
+.full_width{
+	flex: 100%;
+}
+.left_column {
+	flex: 48%;
+	padding: 1%;
+	margin: 0px;
+	
+}
+.right_column{
+	flex:48%;
+	padding: 1%;
+	margin: 0px;
+	
+}
+/* structural layout for logo images in gallery */
+img#bcwd {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+img#ttys {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/* Structural layout for section headline */
+h1 {
+	text-align: center;
+	margin: 0px;
+}
+
+/*container for dynamic columns */
+section#services{
+	column-count: 2;
+}
+
+
+
+/* article structural layout */
+article {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+article > h2 {
+	text-align: left;
+	margin: 0px;
+}
+
+
+article#projects {
+	background-color:rgba(247,170,4,1.00);
+	
+}
+
+article#write-us {
+	background-color: rgba(107,237,15,1.00);
+}
+
+article#phone {
+	background-color: rgba(7,247,220,1.00);
+	
+}
+
+article#serv_intro {
+	margin: 0.2em;
+}
+
+.media-object {
+	margin: 0 auto;
+}
+
+/* footer structural layout */
+body > footer {
+    width: 100%;
+	
+}
+
+
+/* Graphical styling of elements (fonts, sizes, page colors). */
+
+/* body styling */
+html {
+	background-color: hsla(166, 91%, 39%, 1.00);
+}
+body {
+	background-color: hsla(200,92%,86%,1.00);
+	font-family: 'Roboto Slab', serif;
+	font-size:1.5em;
+	color:rgba(90,3,156,1.00);
+}
+
+/* header styling/background fill */
+header {
+	text-align: center;
+	background-color:#1C02FF;
+}
+
+
+/* navigation bar links and visited styling */
+nav > ul > li > a:link, nav > ul > li > a:visited {
+	text-decoration: none;
+	color: hsla(200,92%,86%,1.00);
+}
+
+/* navigation bar hover and active link styling */
+nav > ul > li > a:hover, nav > ul > li > a:active, nav > ul > li > a#active  {
+	text-decoration: none;
+	background-color: hsla(200,92%,86%,1.00);
+	color: rgba(2,1,104,1.00);
+}
+
+/* default anchor styling */
+a:link {
+	color: rgba(28,2,255,1.00);
+}
+
+a:visited {
+	color: purple;
+}
+
+a:hover {
+	color: red;
+}
+a:active {
+	color: green;
+}
+
+
+
+/* section styling, typesetting and color */
+section {
+	margin:inherit;
+	border-color: blue;
+}
+
+section > h1 {
+	font-family: 'Titillium Web', 'Times New Roman', serif;
+	font-size: 1.8em;
+	letter-spacing: 0.1em;
+	background-color: rgba(2,1,104,1.00);
+	color: white;
+}
+
+/* article header typesetting and color */
+article > h2 {
+	color:rgba(90,5,211,1.00);
+	font-family: 'Black Ops One', cursive;
+	font-size: 1.25em;
+	
+}
+
+/* description list formatting */
+article > dl > dt {
+	font-weight: bold;
+	line-height: 2em;
+	margin: 1%;
+	padding: 2px;
+	border-top: 2px solid blue;
+	border-bottom: 2px solid blue;
+	
+	
+}
+/*footer typesetting and colors */
+body > footer {
+	width: 100%;
+	font-family: 'Black Ops One', cursive;
+	text-align: center;
+	color:rgba(90,5,211,1.00);
+	background-color: hsla(166,91%,39%,1.00);
+
+}
+/* formatting for dev_profile table */
+table#dev_profile {
+	margin: auto auto;
+	border-collapse: collapse;}
+
+table#dev_profile th, td{
+	font-size: .75em;
+	border: 1px solid rgba(90,3,156,1.00);
+}
+
+@media screen and  (max-width: 840px) {
+	.flex_container, nav > ul{
+		flex-direction: column;
+	}
+}

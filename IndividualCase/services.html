@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-us">
+<!--	
+		Berks County Web Developers
+    	Author: 	Christopher W. Schaeffer
+    	Date:   	January 20, 2019
+		MODIFIED:	Feburary 8, 2019
+    	Filename: 	services.html
+		Listing of services offered by us.
+		ADDED MODIFIED TEMPLATE CSS FILE FOR GALLERY, ADDED BOOTSTRAP AND LIGHT BOX.
+	-->
+<head>
+	<meta charset="utf-8">
+	<title>Berks County Web Developers - Services</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/gallery-grid.css">
+	<link href="css/bw_styles.css" rel="stylesheet" />
+	</head>
+	
+	<!--The body element contains the elements that make up the body of the page.-->
+	<body>
+		<!--Our header contains logo and name.-->
+		<header>
+			<a href="index.html">
+				<img src="images/berksweb-logo.png" alt="Berks County Web Developers" />
+			</a>	
+		</header>
+		
+		<!-- Our Navigation Links-->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about-us.html">About Us</a></li>
+				<li><a href="services.html" id="active">Services</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="contact-us.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<!-- This starts the main content of the page, stored in sections and articles -->
+		<main>
+			<section id="services" class="flex_container"> <!-- Section Heading -->
+				<h1 class="full_width">Our Services</h1>
+				<!-- Articles contained in sections -->
+				<article id="service_intro" class="left_column">
+					<h2>What We Do</h2>
+					<p>We undertake projects of various sizes and depth.  These 
+					  projects engage various skillsets and technologies in 
+					  their development.  We have a foundation in building a 
+					  web presence using the following technologies. </p>
+				</article>
+				<article id="service_list" class="right_column">
+					<!-- Description List featuring service titles and a brief description -->
+					<dl>
+						
+						<dt>Hypertext Markup Language (HTML)</dt>
+						<dd>This is the written language formatting information
+							on the internet.  With this language, we organize 
+							information so that it is understandable by both
+							humans and machines.  Best practice organizes 
+							information independent of presentation.  
+							Our initial development is performed in this 
+							language.</dd>
+						
+						<dt>Cascading Stylesheets (CSS)</dt>
+						<dd>Cascading Stylesheets are used to layout HTML 
+							documents in presentation form.  This creates the 
+							visual structure that is rendered by the browser.
+							We can create these with optimizations for devices 
+							of differing capabilities.</dd>
+	
+						<dt>JavaScript</dt>
+						<dd>JavaScript can be used to perform various dynamic 
+							operations.  This can be as simple as changing 
+							properties of HTML elements.  It can be more 
+							complicated, creating objects that are generated 
+							interactively with server connections.
+							JavaScript's are programs that are executed within 
+							the users browser.</dd>
+	
+						<dt>Personal Hypertext Preprocessor (PHP)</dt>
+						<dd>PHP is a server-side scripting language.  Programs 
+							are created in this language to operate on the 
+							server, generating dynamic content in HTML for the 
+							browser.  It is one of the most popular server-side 
+							scripting languages.</dd>
+						
+						<dt>Database Integration</dt>
+						<dd>Interacting with users can generate information that
+							we want to save for their
+							future use, or internal operations.  Databases can 
+							be used to store information that is used to create 
+							dynamic content with various scripting languages.</dd>
+					</dl>
+				</article>
+				<article id="service_note">
+					<!--Closing paragraph-->
+					<p>Note that each project is different.  HTML and CSS are 
+					utilized for creating a basic site, or organizing and 
+					presenting a more complicated site engaging various scripting 
+					technologies and databases.  We analyze the needs of your site
+					to develop content and features that may engage scripting 
+					technologies as required.</p>
+				</article>
+			</section>
+		</main>
+		<!-- Common Page Footer. -->
+		<footer>
+			&copy;2019 Christopher W. Schaeffer
+		</footer>
+	</body>
+</html>
