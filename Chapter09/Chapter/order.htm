@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
    <!--
       JavaScript 6th Edition
@@ -7,8 +8,8 @@
       Chapter case
 
       Eating Well in Season order page
-      Author: 
-      Date:   
+      Author:  Christopher W. Schaeffer
+      Date:    2026-02-24
 
       Filename: order.htm
    -->
@@ -34,26 +35,26 @@
             <p>Eating Well in Season</p>
          </hgroup>
       </header>
-   
+
       <nav>
          <ul>
             <li><a href="#">About Us</a></li>
             <li class="currentPage"><a href="#">Sign Up</a></li>
             <li><a href="#">Calendar</a></li>
             <li><a href="#">Contact</a></li>
-        </ul>
+         </ul>
       </nav>
    </div>
-      
+
    <article>
       <h2>Sign Up</h2>
-      
+
       <div class="trail">
          <div class="currentPage">Your info</div>
          <div class="otherPage">Your preferences</div>
       </div>
 
-      <form action="order2.htm" autocomplete="on">
+      <form action="order2.htm" autocomplete="on" method="get">
          <fieldset class="text" id="fs1">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" />
@@ -77,6 +78,10 @@
          </fieldset>
       </form>
    </article>
-   <footer><p>Eating Well in Season &bull; Glover, VT</p></footer>
+   <footer>
+      <p>Eating Well in Season &bull; Glover, VT</p>
+   </footer>
+   <script src="script.js"></script>
 </body>
+
 </html>
